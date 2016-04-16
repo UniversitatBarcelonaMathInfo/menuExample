@@ -1,0 +1,5 @@
+#like vim
+*.swp
+
+#not complex compile
+a.out

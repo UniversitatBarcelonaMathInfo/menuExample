@@ -1,2 +1,2 @@
 a:
-	gcc main.c menu.c -Wall
+	gcc main.c menu.c -Wall -g

@@ -33,7 +33,7 @@ void confDetectMenu ();
 
 
 
-void empty () {}; // Aquest, opino que hauria d'estar en globals o algo aixi
+void empty () {} // Aquest, opino que hauria d'estar en globals o algo aixi
 
 void initMenu ()
 {

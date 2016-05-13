@@ -13,12 +13,16 @@
 
 // Definim menus
 //#define MENU_END_WHILE 0
-#define MENU_PRINCIPAL 1
+#define MENU_WELCOME		1
+#define MENU_PRINCIPAL_1	2
 
 void initMenu ( uint8_t *indexMenu, uint8_t *statusKey )
 {
-	*indexMenu = MENU_WELCOM; /* per estar dins el bucle */
+	*indexMenu = MENU_WELCOME; /* per estar dins el bucle */
 	*statKey = KEY_EMPTY;
+
+	escribirInvertido	( "   Practica 5    ", 0 );
+	escribir		( " Benbingut ", 2 );
 }
 
 uint8_t menu ( uint8_t *indexMenu, uint8_t statusKey )
@@ -28,7 +32,7 @@ uint8_t menu ( uint8_t *indexMenu, uint8_t statusKey )
 	{
 	case MENU_WELCOME:
 		ClearScreen();
-		escribirInvertido	( "   Practica 5    ", 0 );
-		escribir		( " Benbingut ", 2 );
+// Mostra Menu Principal
+	case MENU_PRINCIPAL_1:
 	}
 }
